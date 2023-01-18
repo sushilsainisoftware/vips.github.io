@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="hislider1"
+            style="max-width: 938px; max-height: 460px; height: 400px; margin: 0px auto 40px; overflow: visible;">
+            <div class="hiSlider-SliderApp"
+                style="margin: 1px; background: rgb(191, 226, 255); padding: 0px; border: 8px solid rgb(234, 234, 234); border-radius: 3px; box-shadow: rgba(6, 6, 6, 0.533) 0px 0px 10px 1px; user-select: none; width: 920px; height: 382px; overflow: visible;">
+                <div class="SliderContainer" style="height: 382px; width: 920px;"><canvas class="progBarCanv" width="38"
+                        height="38"
+                        style="position: absolute; z-index: 999; user-select: none; width: 38px; height: 38px; top: 20px; left: 20px; cursor: pointer;"></canvas>
+                    <div class="loading-box" style="opacity: 1; display: none;"></div>
+                    <div class="dataContainer" style="overflow: hidden;"><canvas
+                            style="position: absolute; z-index: 1; width: 920px; height: 382px;" width="920"
+                            height="382"></canvas>
+                        <div class="hiSlider-tooltips"
+                            style="display: none; left: 50%; top: 50%; margin-left: -52.5px; margin-top: -9px; opacity: 0.115516;">
+                            <span style="color: #666;">http://hislider.com/</span></div>
+                        <div class="dataWrapper"><img data-src="dataimages/Battleship-Movie-HD-Wallpapers.jpg"
+                                src="dataimages/Battleship-Movie-HD-Wallpapers.jpg" class="data" id="3s1621490263174"
+                                style="display: block; visibility: visible; opacity: 1; height: 941.4px; width: 1656px; top: 0px; left: -736px;">
+                        </div>
+                    </div>
+                    <div class="controlButtonContainer"
+                        style="height: 70px; width: 168px; position: absolute; bottom: 20px; left: 460px; z-index: auto; margin-left: -84px;">
+                        <div class="hiSlider_prev"
+                            style="position: absolute; display: block; cursor: pointer; z-index: 11; width: 64px; height: 64px; background-image: url(&quot;sliderengine/ext/control_prev_next_url.png&quot;); opacity: 0; background-position: 0px 0px; left: 0px; top: 50%; margin-top: -32px;">
+                        </div>
+                        <div class="hiSlider_next"
+                            style="position: absolute; display: block; cursor: pointer; z-index: 11; width: 64px; height: 64px; background-image: url(&quot;sliderengine/ext/control_prev_next_url.png&quot;); opacity: 0; background-position: -64px 0px; right: 0px; top: 50%; margin-top: -32px;">
+                        </div>
+                        <div class="hiSlider_fullScreen"
+                            style="position: absolute; display: block; cursor: pointer; z-index: 11; width: 28px; height: 30px; background-image: url(&quot;sliderengine/ext/control_fullScreen_url.png&quot;); opacity: 0; background-position: -18px -17px; top: 20px; left: 70px;">
+                        </div>
+                    </div>
+                    <div class="actionContainer"
+                        style="border-width: 0px; border-color: transparent; border-style: solid; border-radius: 0px; opacity: 0; cursor: auto;">
+                    </div>
+                    <div class="hi-control-btn playvideo_btn" style="z-index: 20; display: none;"></div>
+                    <div class="hi-close-btn" style="z-index: 1200; display: none;"></div>
+                    <div class="FlyContainer"
+                        style="z-index: auto; width: 330px; overflow: hidden; position: absolute; top: 0px; right: 0px; height: 343.8px; margin-top: 19.1px;">
+                        <div class="thumbContainer"
+                            style="width: 330px; position: absolute; top: 0px; left: 0px; height: 320px; margin-top: 11.9px;">
+                            <ul class="thumbPanel"
+                                style="list-style: none; padding: 0px; margin: 0px; position: absolute; top: 0px;">
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 0px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/the_avengers_movie_2012-HD-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                The Avengers</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Iron Man, Captain America, the Hulk, and Thor form a team - The
+                                                Avengers, to stop Thor's adoptive brother Loki from subjugating Earth
+                                            </div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 148px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 52px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 110px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/Batman-Wallpaper-HD-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Batman</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Batman is a fictional character, a comic book superhero appearing in
+                                                comic books published by DC Comics</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 128px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 61px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 220px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/Avatar_movie-desktop-Wallpaper-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Avatar</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Avatar is an American science fiction action film. The creative plot and
+                                                characters and it fancy vision gained it great achievement.</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 148px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 52px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 0px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/Battleship-Movie-HD-Wallpapers-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Battleship</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                This American military science fiction war film tells a story of the
+                                                battle between human and aliens.</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 128px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 61px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 110px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail"
+                                            src="dataimages/captain-america-backgrounds-hd-high-quality-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Captain America</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Captain America is an American fictional character, a superhero who
+                                                aided the United States government's efforts to win World War II.</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 168px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 46px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 220px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/clash-of-the-titans-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Clash of the Titans</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Clash of the Titans is a 2010 American fantasy adventure film that is
+                                                based on the Greek myth of Perseus.</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 128px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 7px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: -7px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 61px; border-radius: 5px; position: absolute; right: 0px; top: 12px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: -7px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 0px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/iron-man-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Iron Man</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Iron Man is an American fictional character, a superhero who protects
+                                                the world with his ingenious science and engineering.</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 148px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 52px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 110px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/pacificrim_jaegers_wallpaper-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Pacific Rim</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Pacific Rim is a 2013 American science fiction monster action movie in
+                                                which human create gigantic humanoid mecha to combat the monsters.
+                                            </div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 148px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 52px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 220px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/Spiderman_wallpapers_25-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Spider-Man</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Spider-Man is a fictional character, a comic book superhero who has
+                                                super strength and agility.</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 108px;">                                                  
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 72px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 0px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="dataimages/Star-Wars-HD-Wallpaper-1024x576-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Star Wars</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Star Wars became a worldwide pop culture phenomenon after it was first
+                                                released, and expanded to books, television series, computer and video
+                                                games, and comic books.</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 188px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 41px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 110px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail" src="img/1.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                The Lord of the Ring</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                The Lord of the Rings is a film series consisting of three epic fantasy
+                                                adventure films: The Fellowship of the Ring (2001), The Two Towers
+                                                (2002) and The Return of the King (2003).</div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 208px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 37px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listItem"
+                                    style="background: rgba(2, 2, 2, 0.392); border-top: 0px solid rgb(0, 0, 0); border-bottom: 0px solid rgb(0, 0, 0); height: 100px; width: 330px; z-index: 500; overflow: hidden; position: absolute; border-left: 0px solid rgb(0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; left: 340px; top: 220px;">
+                                    <div class="imgContainer"
+                                        style="height: 70px; width: 160px; position: absolute; top: 0px; margin-top: 15px; border-radius: 0px; border: 0px solid rgb(0, 0, 0); cursor: pointer; box-shadow: rgb(0, 0, 0) 1px 1px 3px; left: 10px;">
+                                        <img class="thumbnail"
+                                            src="dataimages/tron-legacy-movies-hd-1080p-wallpapers-download-th.jpg"
+                                            style="height: 70px; width: 160px;"></div>
+                                    <div class="infoContainer"
+                                        style="width: 159px; height: 88px; overflow: hidden; text-align: left; position: absolute; top: 0px; margin-top: 6px; box-shadow: rgb(0, 0, 0) 0px 0px 5px inset; margin-left: 170px; left: 0px; user-select: text;">
+                                        <div class="infoPanel" style="position: relative; top: 0px; left: 0px;">
+                                            <div></div>
+                                            <div class="imgTitle"
+                                                style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Tron Legacy</div>
+                                            <div class="imgDesc"
+                                                style="font-family: &quot;PT Sans Narrow&quot;, Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: italic; color: rgb(255, 255, 255); padding: 2px 2px 2px 5px; text-shadow: rgb(0, 0, 0) -1px 1px 1px;">
+                                                Tron: Legacy is a 2010 American science fiction film released by Walt
+                                                Disney Pictures. It is a sequel to the 1982 science fiction film Tron.
+                                            </div>
+                                            <div class="infoBackground"
+                                                style="width: 100%; background: rgba(34, 34, 34, 0.196); opacity: 0.196078; position: absolute; left: 0px; top: 0px; z-index: -1; height: 148px;">
+                                            </div>
+                                        </div>
+                                        <div class="vScrollbar"
+                                            style="background-color: black; opacity: 0; width: 7px; height: 88px; border-radius: 5px; position: absolute; right: 0px; top: 0px; display: none;">
+                                        </div>
+                                        <div class="hScrollbar"
+                                            style="background-color: black; opacity: 0; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; display: none;">
+                                        </div>
+                                        <div class="vDragBar"
+                                            style="background-color: white; opacity: 0.3; width: 7px; height: 52px; border-radius: 5px; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                        <div class="hDragBar"
+                                            style="background-color: white; opacity: 0.3; height: 7px; width: 0px; border-radius: 5px; position: absolute; left: 0px; bottom: 0px; cursor: pointer; display: none;">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="buttonContainer"
+                        style="overflow: hidden; width: 330px; height: 38px; position: absolute; bottom: 0px; right: 0px; z-index: auto;">
+                        <div class="buttonPanel" style="position: absolute; z-index: 500; right: -114px;">
+                            <div class="prevPageButton"
+                                style="background: url(&quot;sliderengine/ext/Fly_prevNextPageButtonImage.png&quot;) -13px -13px; height: 38px; width: 38px; cursor: pointer; z-index: 500; float: left; margin-top: 0px;">
+                            </div>
+                            <div class="lockButton"
+                                style="background: url(&quot;sliderengine/ext/Fly_lockButtonImage.png&quot;) -18px -18px; height: 28px; width: 28px; cursor: pointer; z-index: 500; float: left; margin-top: 5px;">
+                            </div>
+                            <div class="nextPageButton"
+                                style="background: url(&quot;sliderengine/ext/Fly_prevNextPageButtonImage.png&quot;) -77px -13px; height: 38px; width: 38px; cursor: pointer; z-index: 500; float: left; margin-top: 0px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hi-control-btn lightbox_btn" style="z-index: 25; opacity: 0.977932; display: none;">
+                    </div>
+                </div>
+                <div class="hiSlider-shadow"
+                    style="margin-top: 5px; margin-left: -7%; width: 114%; height: 32px; display: block;"><img
+                        src="sliderengine/ext/basicShadowImageUrl.png" style="width:100%;height:100%;"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
